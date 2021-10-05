@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abrar - Portfolio</title>
+	<meta http-equiv="X-UA-Compitable" content="IE=edge">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stuff/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="stuff/css/style.css">
+	<link rel="stylesheet" type="text/css" href="stuff/css/responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+	<link rel="icon" href="stuff/imgs/favicon.png">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		.header {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.prog-cont {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.skills {
+			width: 100%;
+		}
+		.skills-list {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+		}
+		.skills-list li {
+			width: 100%;
+		}
+		.skills-list span.bar {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+   <!-- Links -->
+	<nav class="main-nav">
+			<ul class="nav-list">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+			</ul>
+		</nav>
+<main class="main-content">
+	<!-- Header -->
+	<div class="header">
+		<h2 class="head">Abrar War</h2>
+		<div class="tags-container">
+			<div class="tags">
+				Web Developer, Geek , Student
+			</div>
+		</div>
+		 <div class="social-icon">
+            <a target="_blank" href=""><i id="fab1" class="fab fa-facebook"></i></a>
+            <a target="_blank" href=""><i id="fab1" class="fab fa-github"></i></a>
+            <a target="_blank" href=""><i id="fab1" class="fab fa-twitter"></i></a>
+            <a target="_blank" href=""><i id="fab1" class="fab fa-instagram"></i></a>
+        </div>
+	</div>
+	<!-- Progress -->
+	<div class="prog-cont">
+		<div class="skills">
+			<i class="fas fa-laptop" id="skill"> <span class="skill-head">Skills</span></i>
+		</div>
+		<ul class="skills-list">
+			<h2 class="Progress-head">Progress</h2>
+			<li>
+				<h3>HTML5 & CSS3</h3><span class="bar"><span class="htmlcss"></span></span>
+			</li>
+			<li>
+				<h3>JavaScript</h3><span class="bar"><span class="js"></span></span>
+			</li>
+			<li>
+				<h3>Bootstrap</h3><span class="bar"><span class="bs"></span></span>
+			</li>
+			<li>
+				<h3>jQuery</h3><span class="bar"><span class="jq"></span></span>
+			</li>
+		</ul>
+	</div>
+	<!-- Projects -->
+	<div class="project-cont">
+
+		<div class="project-head">
+			<i class="fas fa-book"><span class="prjct"> Projects</span></i>
+		</div>
+			<section class="projects">
+				<div class="project Project-1">
+					<h4>Quiz Master</h4>
+					<img src="stuff/imgs/5.jpg" class="img1">
+				</div>
+				<div class="project project-2">
+					<h4 class="calc">Calculator</h4>
+					<img src="stuff/imgs/7.jpeg" class="img2">
+				</div>
+			</section>
+
+	</div>
+	<!-- About -->
+	<section class="about-cont">
+		<h2 class="about-head">About Me</h2>
+			<p class="info">
+				Hi There. My Name Is Abrar Amin. I am Student Of <br/>
+				Class 9. I Study In SRM Welkin. Take A Look <br/>
+				Around And Let Me Know How It Looks.<br/>
+				    Ciao!
+			</p>
+	</section>
+	<!-- Contact -->
+	<section class="contact-cont p-2">
+		<i class="fas fa-address-book" id="contact-head"><span class="contact-1"> Contact Me</span></i>
+			<div class="form-cont">
+				<form id="contactForm">
+					<fieldset>
+						<label for="name"><i class="fas fa-address-card"></i> Name*</label>
+						<input type="text" id="name" minlength="5" maxlength="50" required>
+					</fieldset>
+					<fieldset>
+						<label for="email"><i class="fas fa-envelope"></i> Email*</label>
+						<input type="text" id="email" minlength="5" maxlength="50" required>
+					</fieldset>
+					<fieldset>
+						<label for="mssg"><i class="fas fa-comment-dots"></i> Message*</label>
+						<textarea required minlength="4" maxlength="256" rows="5" id="message"></textarea>
+					</fieldset>
+					<button id="sendBtn" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send</button>
+				</form>
+			</div>
+	</section>
+	<!-- Footer -->
+	<footer class="footer">
+		Designed | Developed By Abrar
+	</footer>
+	<div class="to-top-btn" id="topBtn" onclick="toTop();">
+		<i class="fas fa-caret-up"></i>
+	</div>
+</main>
+
+	<script type="text/javascript">
+
+		var mybutton = document.getElementById("topBtn");
+
+		window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+  				if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+			    	mybutton.style.display = "flex";
+			  	} else {
+			    	mybutton.style.display = "none";
+			  	}
+			}
+
+			function toTop() {
+  				document.body.scrollTop = 0; 
+  				document.documentElement.scrollTop = 0;  
+			}
+	</script>
+
+</body>
+</html>

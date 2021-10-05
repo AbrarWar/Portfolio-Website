@@ -1,0 +1,354 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html body {
+	background: #393e46;
+	width: 100vw;
+	height: 100vh;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.main-nav {
+	background: #1e1f26;
+	height: 10vh;
+	width: 100vw;
+	position: fixed;
+}
+
+.header {
+	padding: 40px;
+}
+
+ul {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 60px;
+}
+
+.nav-link {
+	color: #4ecca3;
+	font-size: 1.5rem;
+	padding-right: 20px;
+}
+
+.nav-link:hover {
+	border-bottom: 2px solid orange;
+	color: #4f77ff;
+}
+
+.head {
+	margin-top: 40px;
+	color: white;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.abrar {
+	color: orange;
+	border-bottom: 2px solid orange;
+}
+
+.tags-container {
+	justify-content: center;
+	display: flex;
+}
+
+.tags{
+	width: 0ch;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 2rem;
+	margin: 40px 0 40px 0;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	text-orientation: upright;
+	animation: text 10s steps(28)  infinite;
+}
+
+@keyframes text{
+	0%{
+	width: 0ch;
+
+	}
+	50%{
+	width: 28ch;
+	}
+	100%{
+	width: 0ch;
+	}
+}
+
+.social-icon {
+	justify-content: center;
+	display: flex;
+}
+
+
+ #fab1 {
+    transition: all .3s ease;
+    justify-content: center;
+    color: #4ecca3;
+	font-size: 2.5rem;
+    margin: 10px 5px 10px 0;
+    text-decoration: none;
+    /*outline: 2px solid grey;*/
+    padding: 10px;
+}
+
+ #fab1:hover {
+    transform: scale(1.5);
+    text-decoration: none;
+}
+
+.prog-cont{
+	color: #4ecca3;
+	background: #232931;
+	width: 100%;
+	padding: 40px;
+	margin: 10px 0 0 0;
+}
+
+.skills {
+	justify-content: center;
+	display: flex;
+	font-size: 2rem;
+}
+
+#skill {
+	color: white;
+	font-size: 3rem;
+}
+
+.skill-head {
+	color: white;
+	font-family: Century Gothic;
+	font-weight: 500;
+}
+
+
+.Progress-head{
+	font-size: 2rem;
+	margin: 10px 0 30px 0;
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+li{
+	list-style: none;
+}
+
+.skills li {
+	margin: 20px 0;
+}
+
+.bar {
+	background-color: #353b48;
+	border: 1px solid rgba(0,0,0,0.3);
+	display: block;
+	width: 80%;
+	height: 5px;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #2187e7b3;
+}
+
+h3 {
+	font-family: consolas;
+	font-size: 2rem;
+	margin: 10px;
+}
+
+.bar span {
+	height: 5px;
+	float: left;
+	background-color: #2187e7;
+}
+
+.htmlcss {
+	width: 70%;
+	animation: htmlcss 3s;
+}
+
+.bs {
+	width: 65%;
+	animation: bs 3s;
+}
+
+.js {
+	width: 50%;
+	animation: js 3s;
+}
+
+.jq {
+	width: 30%;
+	animation: jq 3s;
+}
+
+
+.project-cont {
+	padding: 40px;
+
+}
+
+.project-head {
+	color: white;
+	font-size: 2.5rem;
+	display: flex;
+	justify-content: center;  
+}
+
+.prjct {
+	font-family: Century Gothic;
+	font-weight: 500;
+}
+
+.project {
+	margin-top: 40px;
+}
+
+h4 {
+	color: white;
+	font-size: 1.7rem;
+}
+
+.calc {
+	padding: 0;
+	margin-left: 20px;
+}
+
+.img1 {
+	background-position: center;
+	border: 3px solid white;
+	border-bottom: 5px solid orange;
+	width: 500px;
+	height: 400px;
+}
+
+.img2 {
+	background-position: center;
+	border: 3px solid white;
+	border-bottom: 5px solid orange;
+	width: 500px;
+	height: 400px;
+	margin-left: 20px;
+}
+
+.projects {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-cont {
+	background: #232931;
+	padding: 40px;
+	width: 100%;
+}
+.about-head {
+	color: white;
+	font-family: Century Gothic;
+	font-weight: 500;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 25px;
+}
+
+.info {
+	color: #4ecca3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 50px;
+	font-size: 1.7rem;
+}
+
+#contact-head {
+	color: white;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+}
+.contact-1 {
+	font-family: Century Gothic;
+	font-weight: 500;
+}
+
+.contact-cont {
+	width: 100%;
+	padding: 40px;
+}
+
+.contact-cont .form-cont {
+	display: flex;
+	justify-content: center;
+}
+
+.form-cont form {
+	margin-top: 60px;
+}
+
+.form-cont fieldset {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	width: 500px;
+
+}
+
+.form-cont fieldset label {
+	margin-bottom: 10px;
+	margin-top: 15px;
+	font-size: 1.5rem;
+}
+
+.form-cont fieldset input, .form-cont fieldset textarea{
+	padding: 7px;
+	background-color: #1e1f26;
+	resize: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+.btn {
+	width: fit-content;
+	padding: 10px 10px;
+	font-weight: bold;
+	margin-top: 15px;
+	font-size: 1.5rem;
+	border-radius: 4px;
+}
+
+.footer {
+	color: aqua;
+	background: #232931;
+	padding: 30px;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+#topBtn {
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background-color: #283655;
+	color: #4ecca3;
+	border-radius: 5px;
+	font-size: 3rem;
+	cursor: pointer;
+	transition: all .4s ease;
+	display: none;
+}
